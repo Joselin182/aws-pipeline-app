@@ -6,7 +6,6 @@ phases:
       nodejs: 14
     commands:
       - echo "Instalando dependencias..."
-      - cd /home/ec2-user/app
       - npm install
   build:
     commands:
