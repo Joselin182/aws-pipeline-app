@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo "Instalando dependencias..."
+      - cd /home/ec2-user/app
+      - npm install
+  build:
+    commands:
+      - echo "Aplicación construida correctamente"
+
+artifacts:
+  files:
+    - '**/*'
